@@ -1,7 +1,7 @@
 import java.io.*;
 import java.net.*;
 import java.util.Date;
-public class MulticastServer {
+public class MulticastTimeServer {
 
   public static void main(String[] args) {
     System.out.println("Multicast Time Server");
