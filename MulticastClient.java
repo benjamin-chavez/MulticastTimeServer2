@@ -7,7 +7,7 @@ public class MulticastClient {
     System.out.println("Multicast Time Client");
     try (MulticastSocket socket = new MulticastSocket(8888)) {
       InetAddress mcastaddr = InetAddress.getByName("224.0.0.0");
-      InetSocketAddress group = new InetSocketAddress(mcastaddr, port);   //<= Not sure what the port her is actually doing..
+      InetSocketAddress group = new InetSocketAddress(mcastaddr, 7777);   //<= Not sure what the port her is actually doing..
       NetworkInterface netIf = NetworkInterface.getByName("bge0");
       socket.joinGroup(group, netIf);
       System.out.println("Multicast Group Joined)");
